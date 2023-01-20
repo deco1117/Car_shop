@@ -69,6 +69,18 @@ nav ul {
     gap: 48px;
 }
 
+.nav-menu {
+    gap: 4px;
+    display: none;
+}
+
+.nav-menu span {
+    display: inline-block;
+    width: 15px;
+    background-color: #F1F2F3;
+    height: 2px;
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -390,7 +402,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     background-image: url(../images/Map.png);
-    width: 1280px;
+    max-width: 1280px;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -521,12 +533,14 @@ nav ul {
 }
 
 .section-sixth {
-    display: flex;
-    align-items: center;
-    padding: 72px 188px 56px 187px;
+    padding: 56px 188px 56px 187px;
     justify-content: space-between;
     gap: 80px;
     background-image: url(../images/fon-sixth.png);
+    width: 1024px;
+    height: 492px;
+    background-repeat: no-repeat;
+    background-size: 1024px 592px ;
 }
 
 .sixth-title {
@@ -547,6 +561,7 @@ nav ul {
     line-height: 140%;
     color: #BABEC4;
     margin-bottom: 48px;
+    max-width: 375px;
 }
 
 .sixth-btn {
@@ -634,3 +649,171 @@ nav ul {
     left: -16px;
 
 }
+
+
+
+/* RWD Mobile */
+
+
+
+@media only screen and (max-width: 768px) {
+
+    nav ul {
+        display: flex;
+        gap: 48px;
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        
+    }
+    
+    .nav-menu span {
+        display: flex;
+        width: 15px;
+        background-color: #F1F2F3;
+        height: 2px;
+        /* display: none; */
+        
+    }
+
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        gap: 88px;
+        padding: 72px 156px 32px 155px;
+    }
+    
+    .section-three {
+        display: flex;
+
+    }
+    
+    .three-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 23px;
+
+    }
+    .car-logos {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .logos-cars {
+        display: flex;
+        align-items: center;
+        background: #111213;
+        border-radius: 16px;
+        padding: 12px;
+        text-align: center;
+        mix-blend-mode: normal;
+        opacity: 0.3;
+        margin-bottom: 72px;
+    }
+
+    .logos-cars img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .logos-cars h5 {
+        color: #F1F2F3;
+        font-size: 15px;
+        padding: 14px;
+    }
+    
+    .logos-cars:hover {
+        background: #4177DC;
+        border-radius: 16px;
+        opacity: 1;
+    }
+    
+    .fifth-cards {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .fifth-cards .card {
+        position: relative;
+        background: #111213;
+        border-radius: 20px;
+        padding: 32px 21px 24px 24px;
+        background-image: url(../images/shape.png);
+        background-repeat: no-repeat;
+    }
+    
+    .fifth-cards .card::before {
+        position: absolute;
+        content: url(../images/bag.svg);
+        width: 24px;
+        height: 24px;
+        background: #4177DC;
+        border-radius: 20px 0px;
+        padding: 16px 12px;
+        top: 210px;
+        left: 177px;
+    } 
+
+    .section-sixth { 
+        padding: 56px 24px 32px 24px;
+    }
+    
+    .sixth-right {
+        
+    }
+
+    .sixth-title {
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #F1F2F3;
+        margin-bottom: 32px;
+    }
+    
+    .sixth-text {
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #BABEC4;
+        margin-bottom: 48px;
+    }
+    
+    .sixth-btn {
+        background: #4177DC;
+        border-radius: 4px;
+        padding: 14px 32px;
+        border: none;
+    }
+    
+    .sixth-btn a {
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .footer {
+        background-image: url(../images/shape\ two.png);
+        padding: 66px 128px 38px 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+}
+
